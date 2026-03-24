@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manab Khanra — Data Analyst & Data Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div class="noise-overlay"></div>
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#experience" class="nav-link">Training</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#extracurricular" class="nav-link">Activities</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#certifications" class="mob-link">Certs</a></li>
+      <li><a href="#experience" class="mob-link">Training</a></li>
+      <li><a href="#education" class="mob-link">Education</a></li>
+      <li><a href="#extracurricular" class="mob-link">Activities</a></li>
+      <li><a href="#achievements" class="mob-link">Achievements</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting reveal-up">Hello, World! 👋</p>
+      <h1 class="hero-name reveal-up">Manab<br /><span class="glow-text">Khanra</span></h1>
+      <div class="typing-wrapper reveal-up">
+        <span class="typing-prefix">I'm a </span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-summary reveal-up">
+        Aspiring Data Analyst & Data Scientist · CSE @ LPU<br />
+        Turning raw data into decisions through ML, SQL & powerful dashboards.
+      </p>
+      <div class="hero-btns reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fas fa-paper-plane"></i> Contact Me
+        </a>
+        <a href="https://drive.google.com/file/d/1RHZb3dJEIl7ntz_8c1PJ83fA37hmRIPm/view?usp=sharing" target="_blank" class="btn btn-ghost">
+          <i class="fas fa-download"></i> Resume
+        </a>
+      </div>
+      <div class="hero-socials reveal-up">
+        <a href="https://github.com/Manab14" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/manab-khanra/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:manabkhanra499@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </section>
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--section-bg)" />
+    </svg>
+  </div>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-card glass reveal-left">
+          <div class="about-avatar">
+            <div class="avatar-ring">
+              <div class="avatar-inner"><img src="https://drive.google.com/thumbnail?id=1LblaQAZFVr6AEg26cMFd1jvdcB61kTAy&sz=w400" alt="Manab Khanra" class="profile-photo" /></div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Certs</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="8" data-decimal=".52">8</span><span class="stat-plus">.52</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text glass reveal-right">
+          <h3>Turning Raw Data into Real Decisions</h3>
+          <p>
+            Hi, I'm <strong>Manab Khanra</strong>, a B.Tech Computer Science & Engineering student at <strong>Lovely Professional University</strong>, passionate about data analytics, machine learning, and transforming datasets into actionable business insights.
+          </p>
+          <p>
+            I enjoy transforming raw, unstructured data into meaningful insights that can actually drive decisions. What excites me most is the entire process — from cleaning and exploring data, writing efficient SQL queries, and building machine learning models, to finally presenting results through intuitive dashboards.
+          </p>
+          <p>
+            I've worked on end-to-end projects where I focus not just on the technical side, but also on making the outcomes clear, practical, and impactful.
+          </p>
+          <p>
+            Currently, I'm exploring deep learning and generative AI, while continuously strengthening my foundation in Python, C++, Java, SQL, and modern BI tools.
+          </p>
+          <p>
+            I'm always curious, always learning, and always looking for opportunities to solve real-world problems using data.
+          </p>
+          <div class="about-tags">
+            <span class="tag">📊 Data Analysis</span>
+            <span class="tag">🤖 Machine Learning</span>
+            <span class="tag">🐍 Python</span>
+            <span class="tag">📈 Power BI</span>
+            <span class="tag">🗄️ SQL</span>
+            <span class="tag">🧠 Deep Learning</span>
+            <span class="tag">⚡ C++</span>
+            <span class="tag">✨ Gen AI</span>
+          </div>
+
+          <div class="hobbies-row">
+            <p class="hobbies-label"><i class="fas fa-heart"></i> When I'm not coding</p>
+            <div class="hobbies-list">
+              <div class="hobby-chip">
+                <span class="hobby-emoji">🎮</span>
+                <span>Gaming</span>
+              </div>
+              <div class="hobby-chip">
+                <span class="hobby-emoji">🎌</span>
+                <span>Anime</span>
+              </div>
+              <div class="hobby-chip">
+                <span class="hobby-emoji">🎸</span>
+                <span>Guitar</span>
+              </div>
+              <div class="hobby-chip">
+                <span class="hobby-emoji">🎨</span>
+                <span>Art</span>
+              </div>
+              <div class="hobby-chip">
+                <span class="hobby-emoji">📚</span>
+                <span>Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section alt-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Skills & <span class="accent">Technologies</span></h2>
+      <p class="section-sub reveal-up">My technical toolkit — constantly evolving.</p>
+      <div class="skills-categories reveal-up">
+        <button class="skill-cat active" data-cat="all">All</button>
+        <button class="skill-cat" data-cat="lang">Languages</button>
+        <button class="skill-cat" data-cat="data">Data & ML</button>
+        <button class="skill-cat" data-cat="tools">Tools</button>
+        <button class="skill-cat" data-cat="soft">Soft Skills</button>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-badge glass" data-cat="lang">
+          <i class="fab fa-python skill-icon python"></i><span>Python</span>
+        </div>
+        <div class="skill-badge glass" data-cat="lang">
+          <i class="fas fa-database skill-icon sql"></i><span>SQL / MySQL</span>
+        </div>
+        <div class="skill-badge glass" data-cat="lang">
+          <i class="fas fa-code skill-icon cpp"></i><span>C++</span>
+        </div>
+        <div class="skill-badge glass" data-cat="lang">
+          <i class="fab fa-java skill-icon java"></i><span>Java</span>
+        </div>
+        <div class="skill-badge glass" data-cat="lang">
+          <i class="fab fa-html5 skill-icon html"></i><span>HTML / CSS</span>
+        </div>
+        <div class="skill-badge glass" data-cat="data">
+          <i class="fas fa-chart-bar skill-icon pandas"></i><span>Pandas / NumPy</span>
+        </div>
+        <div class="skill-badge glass" data-cat="data">
+          <i class="fas fa-brain skill-icon ml"></i><span>Machine Learning</span>
+        </div>
+        <div class="skill-badge glass" data-cat="data">
+          <i class="fas fa-fire skill-icon tf"></i><span>Deep Learning</span>
+        </div>
+        <div class="skill-badge glass" data-cat="data">
+          <i class="fas fa-chart-line skill-icon viz"></i><span>Data Visualization</span>
+        </div>
+        <div class="skill-badge glass" data-cat="data">
+          <i class="fas fa-robot skill-icon ai"></i><span>Generative AI</span>
+        </div>
+        <div class="skill-badge glass" data-cat="tools">
+          <i class="fas fa-table skill-icon powerbi"></i><span>Power BI</span>
+        </div>
+        <div class="skill-badge glass" data-cat="tools">
+          <i class="fas fa-file-excel skill-icon excel"></i><span>MS Excel</span>
+        </div>
+        <div class="skill-badge glass" data-cat="tools">
+          <i class="fab fa-git-alt skill-icon git"></i><span>Git / GitHub</span>
+        </div>
+        <div class="skill-badge glass" data-cat="tools">
+          <i class="fas fa-book skill-icon jupyter"></i><span>Jupyter Notebook</span>
+        </div>
+        <div class="skill-badge glass" data-cat="tools">
+          <i class="fab fa-linux skill-icon linux"></i><span>Linux / Ubuntu</span>
+        </div>
+        <div class="skill-badge glass" data-cat="tools">
+          <i class="fab fa-node-js skill-icon node"></i><span>Node JS</span>
+        </div>
+        <div class="skill-badge glass" data-cat="soft">
+          <i class="fas fa-puzzle-piece skill-icon soft1"></i><span>Problem-Solving</span>
+        </div>
+        <div class="skill-badge glass" data-cat="soft">
+          <i class="fas fa-lightbulb skill-icon soft2"></i><span>Analytical Thinking</span>
+        </div>
+        <div class="skill-badge glass" data-cat="soft">
+          <i class="fas fa-sync-alt skill-icon soft3"></i><span>Adaptability</span>
+        </div>
+        <div class="skill-badge glass" data-cat="soft">
+          <i class="fas fa-graduation-cap skill-icon soft4"></i><span>Continuous Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub reveal-up">End-to-end data projects — from raw data to real insights.</p>
+      <div class="projects-grid">
+        <div class="project-card glass reveal-up">
+          <div class="project-img">
+            <img src="https://drive.google.com/thumbnail?id=1egKZF7zbNfy6r0F1Fikfz2cd4fFkqL7S&sz=w600" alt="Stroke Risk Analysis Dashboard" class="project-real-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>SQL</span><span>Excel</span><span>Power BI</span><span>ML</span></div>
+            <h3>Stroke Risk Analysis Dashboard</h3>
+            <p>End-to-end healthcare analytics pipeline analyzing 5,000+ patient records. Performed EDA, feature engineering, and class balancing to build a logistic regression classifier (~84% accuracy, ROC-AUC ≈ 0.84). Identified key stroke risk drivers — age, hypertension, BMI &amp; glucose — and visualized predictive insights in an interactive Power BI dashboard with SQL-backed risk views.</p>
+            <div class="project-meta">
+              <span class="project-date"><i class="fas fa-calendar"></i> Aug 2025</span>
+              <span class="project-acc"><i class="fas fa-bullseye"></i> ROC-AUC ≈ 0.84</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Manab14/stroke-risk-analysis-capstone" target="_blank" class="icon-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass reveal-up" style="animation-delay:.1s">
+          <div class="project-img">
+            <img src="https://drive.google.com/thumbnail?id=1LlEE_DqzIowBMQulmE-ya8rBpiTPZoiu&sz=w600" alt="E-commerce Sales Navigator Dashboard" class="project-real-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Power BI</span><span>SQL</span><span>Excel</span></div>
+            <h3>E-commerce Sales Analysis</h3>
+            <p>Designed a multi-layered Power BI dashboard to track revenue trends, product performance, and customer behavior across regions. Performed data cleaning and transformation using SQL and Excel, and calculated key KPIs such as total revenue, profit margin, average order value, and customer retention metrics.</p>
+            <div class="project-meta">
+              <span class="project-date"><i class="fas fa-calendar"></i> Aug 2025</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Manab14/Ecommerce-Sale-Analysis_PowerBI" target="_blank" class="icon-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass reveal-up" style="animation-delay:.2s">
+          <div class="project-img">
+            <img src="https://drive.google.com/thumbnail?id=1VOCOKWtsP3-pVVuTRzAu9t74V4Ksgzm4&sz=w600" alt="Fraud Detection Dashboard" class="project-real-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>SQL</span><span>Excel</span><span>Power BI</span></div>
+            <h3>Fraud Detection</h3>
+            <p>Built a fraud detection pipeline involving data preprocessing, feature engineering, and logistic regression to classify fraudulent transactions with high precision. Designed SQL views and Power BI dashboards to monitor fraud patterns, transaction anomalies, and KPI metrics.</p>
+            <div class="project-meta">
+              <span class="project-date"><i class="fas fa-calendar"></i> Aug 2025</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Manab14/Fraud_detection" target="_blank" class="icon-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem" class="reveal-up">
+        <a href="https://github.com/Manab14" target="_blank" class="btn btn-ghost">
+          <i class="fab fa-github"></i> View All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section alt-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Certifications &amp; <span class="accent">Courses</span></h2>
+      <p class="section-sub reveal-up">Hover a card to see the real certificate.</p>
+      <div class="cert-flip-grid">
+
+        <div class="cert-flip-card reveal-up">
+          <div class="cert-flip-inner">
+            <div class="cert-flip-front">
+              <div class="cert-flip-icon"><i class="fas fa-brain" style="color:#a78bfa"></i></div>
+              <h4>Deep Learning</h4>
+              <p>NPTEL</p>
+              <span class="cert-flip-year">Apr 2025</span>
+              <div class="cert-flip-hint"><i class="fas fa-hand-pointer"></i> Hover to preview</div>
+            </div>
+            <div class="cert-flip-back cert-img-back">
+              <a href="https://drive.google.com/file/d/1mv4KuK6RSgYNKsebmy3jLTqth0tIpQWe/view?usp=sharing" target="_blank" class="cert-img-link">
+                <img src="https://drive.google.com/thumbnail?id=1mv4KuK6RSgYNKsebmy3jLTqth0tIpQWe&sz=w600" alt="Deep Learning NPTEL Certificate" class="cert-preview-img" />
+                <div class="cert-img-overlay">
+                  <i class="fas fa-external-link-alt"></i> Open Full Certificate
+                </div>
+              </a>
+              <div class="cert-img-label">Deep Learning &middot; NPTEL &middot; Apr 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-flip-card reveal-up" style="animation-delay:.08s">
+          <div class="cert-flip-inner">
+            <div class="cert-flip-front">
+              <div class="cert-flip-icon"><i class="fas fa-robot" style="color:#a78bfa"></i></div>
+              <h4>Build GenAI Apps (No-Code)</h4>
+              <p>Udemy</p>
+              <span class="cert-flip-year">Aug 2025</span>
+              <div class="cert-flip-hint"><i class="fas fa-hand-pointer"></i> Hover to preview</div>
+            </div>
+            <div class="cert-flip-back cert-img-back">
+              <a href="https://drive.google.com/file/d/1ZvPtlULeaiM28rQQW5Ku_-MjDe-1beXn/view?usp=sharing" target="_blank" class="cert-img-link">
+                <img src="https://drive.google.com/thumbnail?id=1ZvPtlULeaiM28rQQW5Ku_-MjDe-1beXn&sz=w600" alt="Build GenAI Apps Udemy Certificate" class="cert-preview-img" />
+                <div class="cert-img-overlay">
+                  <i class="fas fa-external-link-alt"></i> Open Full Certificate
+                </div>
+              </a>
+              <div class="cert-img-label">Build GenAI Apps &middot; Udemy &middot; Aug 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-flip-card reveal-up" style="animation-delay:.16s">
+          <div class="cert-flip-inner">
+            <div class="cert-flip-front">
+              <div class="cert-flip-icon"><i class="fas fa-microchip" style="color:#38bdf8"></i></div>
+              <h4>Computational Theory &amp; Finite Automata</h4>
+              <p>Infosys Springboard</p>
+              <span class="cert-flip-year">Aug 2025</span>
+              <div class="cert-flip-hint"><i class="fas fa-hand-pointer"></i> Hover to preview</div>
+            </div>
+            <div class="cert-flip-back cert-img-back">
+              <a href="https://drive.google.com/file/d/1VbHfORdmEUoECeGW8x8iv_SQ1ml-Exqn/view?usp=sharing" target="_blank" class="cert-img-link">
+                <img src="https://drive.google.com/thumbnail?id=1VbHfORdmEUoECeGW8x8iv_SQ1ml-Exqn&sz=w600" alt="Infosys Computational Theory Certificate" class="cert-preview-img" />
+                <div class="cert-img-overlay">
+                  <i class="fas fa-external-link-alt"></i> Open Full Certificate
+                </div>
+              </a>
+              <div class="cert-img-label">Computational Theory &middot; Infosys &middot; Aug 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-flip-card reveal-up" style="animation-delay:.24s">
+          <div class="cert-flip-inner">
+            <div class="cert-flip-front">
+              <div class="cert-flip-icon"><i class="fas fa-magic" style="color:#f59e0b"></i></div>
+              <h4>Master Generative AI &amp; GenAI Tools</h4>
+              <p>Udemy</p>
+              <span class="cert-flip-year">Aug 2025</span>
+              <div class="cert-flip-hint"><i class="fas fa-hand-pointer"></i> Hover to preview</div>
+            </div>
+            <div class="cert-flip-back cert-img-back">
+              <a href="https://drive.google.com/file/d/1BM4bhLXL84_ZCtnDdswh76LxNxwUBWGF/view?usp=sharing" target="_blank" class="cert-img-link">
+                <img src="https://drive.google.com/thumbnail?id=1BM4bhLXL84_ZCtnDdswh76LxNxwUBWGF&sz=w600" alt="Master GenAI Tools Udemy Certificate" class="cert-preview-img" />
+                <div class="cert-img-overlay">
+                  <i class="fas fa-external-link-alt"></i> Open Full Certificate
+                </div>
+              </a>
+              <div class="cert-img-label">Master GenAI Tools &middot; Udemy &middot; Aug 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-flip-card reveal-up" style="animation-delay:.32s">
+          <div class="cert-flip-inner">
+            <div class="cert-flip-front">
+              <div class="cert-flip-icon"><i class="fab fa-python" style="color:#3776ab"></i></div>
+              <h4>Python for Data Science, AI &amp; Dev</h4>
+              <p>IBM &middot; Coursera</p>
+              <span class="cert-flip-year">Mar 2024</span>
+              <div class="cert-flip-hint"><i class="fas fa-hand-pointer"></i> Hover to preview</div>
+            </div>
+            <div class="cert-flip-back cert-img-back">
+              <a href="https://coursera.org/share/54f2101c7306e4c90359c1d238d360c0" target="_blank" class="cert-img-link">
+                <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~54f2101c7306e4c90359c1d238d360c0/CERTIFICATE_LANDING_PAGE~54f2101c7306e4c90359c1d238d360c0.jpeg" alt="IBM Python Coursera Certificate" class="cert-preview-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="cert-img-fallback" style="display:none">
+                  <i class="fab fa-python" style="font-size:2.5rem;color:#3776ab"></i>
+                  <span>Python for Data Science</span>
+                  <span style="font-size:0.75rem;color:var(--text-muted)">IBM &middot; Coursera</span>
+                </div>
+                <div class="cert-img-overlay">
+                  <i class="fas fa-external-link-alt"></i> Open Full Certificate
+                </div>
+              </a>
+              <div class="cert-img-label">Python for DS &middot; IBM / Coursera &middot; Mar 2024</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== TRAINING ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Training & <span class="accent">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h4>Data Analytics & Industry Tools</h4>
+                <p class="tl-company">W3Grads</p>
+              </div>
+              <span class="tl-date">Jun 2025 — Jul 2025</span>
+            </div>
+            <ul class="tl-points">
+              <li>Completed intensive training covering Excel, MySQL, Python, Power BI, and Machine Learning</li>
+              <li>Built multiple mini-projects including dashboards, SQL extractions, Python EDA, and classification models</li>
+              <li>Gained hands-on experience with full analytical workflows: data cleaning, visualization, model evaluation & insights reporting</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Excel</span><span>MySQL</span><span>Python</span><span>Power BI</span><span>ML</span>
+            </div>
+            <div style="margin-top:1rem">
+              <a href="https://drive.google.com/file/d/1RHZb3dJEIl7ntz_8c1PJ83fA37hmRIPm/view?usp=sharing?usp=sharing" target="_blank" class="btn btn-sm btn-ghost"><i class="fas fa-certificate"></i> View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section alt-section">
+    <div class="container">
+      <h2 class="section-title reveal-up"><span class="accent">Education</span></h2>
+      <div class="edu-grid">
+        <div class="edu-card glass reveal-up">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-info">
+            <div class="edu-header">
+              <h4>B.Tech — Computer Science & Engineering</h4>
+              <span class="edu-badge cgpa">CGPA: 8.52</span>
+            </div>
+            <p class="edu-school">Lovely Professional University</p>
+            <p class="edu-loc"><i class="fas fa-map-marker-alt"></i> Phagwara, Punjab</p>
+            <p class="edu-date"><i class="fas fa-calendar"></i> Aug 2023 — Present</p>
+          </div>
+        </div>
+        <div class="edu-card glass reveal-up" style="animation-delay:.1s">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-info">
+            <div class="edu-header">
+              <h4>Intermediate (PCM)</h4>
+              <span class="edu-badge pct">83.6%</span>
+            </div>
+            <p class="edu-school">Tamluk Hamilton High School</p>
+            <p class="edu-loc"><i class="fas fa-map-marker-alt"></i> Tamluk, West Bengal</p>
+            <p class="edu-date"><i class="fas fa-calendar"></i> Mar 2022 — May 2023</p>
+          </div>
+        </div>
+        <div class="edu-card glass reveal-up" style="animation-delay:.2s">
+          <div class="edu-icon"><i class="fas fa-book"></i></div>
+          <div class="edu-info">
+            <div class="edu-header">
+              <h4>Matriculation</h4>
+              <span class="edu-badge pct2">93.6%</span>
+            </div>
+            <p class="edu-school">Tamluk Hamilton High School</p>
+            <p class="edu-loc"><i class="fas fa-map-marker-alt"></i> Tamluk, West Bengal</p>
+            <p class="edu-date"><i class="fas fa-calendar"></i> Oct 2020 — Jul 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== EXTRACURRICULAR ===== -->
+  <section id="extracurricular" class="section alt-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Extra <span class="accent">Curricular</span></h2>
+      <p class="section-sub reveal-up">Beyond academics — giving back to the community.</p>
+
+      <div class="ec-card glass reveal-up">
+        <div class="ec-header">
+          <div class="ec-icon-wrap"><i class="fas fa-hands-helping"></i></div>
+          <div class="ec-title-group">
+            <div class="ec-type-tag">🎓 Community Development Project · LPU</div>
+            <h3>Child Rights & Education for Special Children</h3>
+            <p class="ec-org">Nimtouri Tamluk Unnayan Samity &nbsp;·&nbsp; Tamluk, West Bengal</p>
+          </div>
+          <div class="ec-duration-badge"><i class="fas fa-calendar"></i> Jul 2024</div>
+        </div>
+
+        <div class="ec-divider"></div>
+
+        <div class="ec-compact-body">
+          <p class="ec-summary">
+            Completed a mandatory <strong>35+ hour CDP</strong> at an NGO dedicated to child rights & empowerment of persons with disabilities (Divyangjan) — organizing virtual classes, quiz competitions, awareness workshops, and holistic development activities.
+          </p>
+
+          <div class="ec-compact-grid">
+            <div class="ec-compact-item"><i class="fas fa-chalkboard-teacher"></i><span>Daily Visits & Monitoring</span></div>
+            <div class="ec-compact-item"><i class="fas fa-laptop"></i><span>Virtual Learning Sessions</span></div>
+            <div class="ec-compact-item"><i class="fas fa-trophy"></i><span>Quiz & Fun Activities</span></div>
+            <div class="ec-compact-item"><i class="fas fa-users"></i><span>Community Awareness Workshops</span></div>
+            <div class="ec-compact-item"><i class="fas fa-birthday-cake"></i><span>Holistic Development Activities</span></div>
+            <div class="ec-compact-item"><i class="fas fa-clock"></i><span>35+ Hours Field Work</span></div>
+          </div>
+
+          <div class="ec-bottom-row">
+            <div class="ec-skills-row">
+              <span class="ec-skill-tag">Empathy & Inclusion</span>
+              <span class="ec-skill-tag">Community Engagement</span>
+              <span class="ec-skill-tag">Child Rights</span>
+              <span class="ec-skill-tag">Event Organization</span>
+              <span class="ec-skill-tag">Teamwork</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1sDrDTZIYjPelybNBazGqovONnzSAIOiB/view?usp=sharing" target="_blank" class="btn btn-sm btn-ghost ec-cert-btn">
+              <i class="fas fa-file-pdf"></i> Certificate
+            </a>
+          </div>
+
+          <div class="ec-verified-row">
+            <i class="fas fa-certificate" style="color:#34d399"></i>
+            <span>Verified by Jogesh Samanta, General Secretary · NGO Reg: S/1L/96 · Reg. No: 12311354</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up"><span class="accent">Achievements</span></h2>
+      <p class="section-sub reveal-up">Competitive programming & platform milestones.</p>
+
+      <div class="achieve-grid">
+
+        <!-- LeetCode Card -->
+        <div class="achieve-card glass reveal-left">
+          <div class="achieve-header">
+            <div class="achieve-logo leetcode-logo">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.8a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+              </svg>
+            </div>
+            <div class="achieve-title-group">
+              <h3>LeetCode</h3>
+              <span class="achieve-platform-tag lc-tag">Competitive Programming</span>
+            </div>
+          </div>
+
+          <div class="achieve-stats-grid lc-stats">
+            <div class="achieve-stat-box">
+              <span class="achieve-big-num lc-color">200+</span>
+              <span class="achieve-stat-label">Problems Solved</span>
+            </div>
+            <div class="achieve-stat-box">
+              <span class="achieve-big-num lc-color">86.6%</span>
+              <span class="achieve-stat-label">Acceptance Rate</span>
+            </div>
+            <div class="achieve-stat-box">
+              <span class="achieve-big-num lc-color">Top 7.5%</span>
+              <span class="achieve-stat-label">Global Ranking</span>
+            </div>
+          </div>
+
+          <div class="achieve-highlight-row">
+            <div class="achieve-highlight">
+              <i class="fas fa-trophy" style="color:#f59e0b"></i>
+              <span>Beats <strong>92.5%</strong> of all users globally</span>
+            </div>
+            <div class="achieve-highlight">
+              <i class="fas fa-check-circle" style="color:#34d399"></i>
+              <span><strong>86.6%</strong> acceptance — high solution quality</span>
+            </div>
+          </div>
+
+          <a href="https://leetcode.com/u/ByuNq02R6I/" target="_blank" class="btn btn-primary achieve-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.8a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            View LeetCode Profile
+          </a>
+        </div>
+
+        <!-- Salesforce Trailhead Card -->
+        <div class="achieve-card glass reveal-right">
+          <div class="achieve-header">
+            <div class="achieve-logo sf-logo">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                <path d="M10.002 6.129a3.5 3.5 0 0 1 6.386 1.983c.046-.002.093-.004.14-.004a2.916 2.916 0 0 1 2.916 2.916 2.916 2.916 0 0 1-2.916 2.916H7.47a2.916 2.916 0 0 1-2.917-2.916 2.916 2.916 0 0 1 2.917-2.916c.047 0 .094.002.141.004a3.5 3.5 0 0 1 2.391-1.983z"/>
+              </svg>
+            </div>
+            <div class="achieve-title-group">
+              <h3>Salesforce Trailhead</h3>
+              <span class="achieve-platform-tag sf-tag">CRM & Cloud Platform</span>
+            </div>
+          </div>
+
+          <div class="achieve-rank-banner">
+            <div class="sf-rank-icon">🏕️</div>
+            <div class="sf-rank-info">
+              <span class="sf-rank-title">Adventurer</span>
+              <span class="sf-rank-sub">Trailhead Rank</span>
+            </div>
+            <div class="sf-rank-glow"></div>
+          </div>
+
+          <div class="achieve-stats-grid">
+            <div class="achieve-stat-box">
+              <span class="achieve-big-num sf-color">12+</span>
+              <span class="achieve-stat-label">Badges Earned</span>
+            </div>
+            <div class="achieve-stat-box">
+              <span class="achieve-big-num sf-color">13,000+</span>
+              <span class="achieve-stat-label">Points</span>
+            </div>
+            <div class="achieve-stat-box">
+              <span class="achieve-big-num sf-color">2</span>
+              <span class="achieve-stat-label">Trails Completed</span>
+            </div>
+            <div class="achieve-stat-box">
+              <span class="achieve-big-num sf-color">🔥 3</span>
+              <span class="achieve-stat-label">Trail Streak</span>
+            </div>
+          </div>
+
+          <div class="achieve-highlight-row">
+            <div class="achieve-highlight">
+              <i class="fas fa-medal" style="color:#00a1e0"></i>
+              <span>Salesforce CRM & Cloud fundamentals</span>
+            </div>
+            <div class="achieve-highlight">
+              <i class="fas fa-fire" style="color:#f59e0b"></i>
+              <span>Active learner with <strong>13,000+</strong> XP earned</span>
+            </div>
+          </div>
+
+          <a href="https://www.salesforce.com/trailblazer/pdw0zcyr2585k2utj1" target="_blank" class="btn sf-btn achieve-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M10.002 6.129a3.5 3.5 0 0 1 6.386 1.983c.046-.002.093-.004.14-.004a2.916 2.916 0 0 1 2.916 2.916 2.916 2.916 0 0 1-2.916 2.916H7.47a2.916 2.916 0 0 1-2.917-2.916 2.916 2.916 0 0 1 2.917-2.916c.047 0 .094.002.141.004a3.5 3.5 0 0 1 2.391-1.983z"/></svg>
+            View Trailhead Profile
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub reveal-up">Open to internships, collaborations & data opportunities!</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <a href="mailto:manabkhanra499@gmail.com" class="contact-item glass">
+            <i class="fas fa-envelope ci-icon email"></i>
+            <div><h5>Email</h5><p>manabkhanra499@gmail.com</p></div>
+          </a>
+          <a href="https://www.linkedin.com/in/manab-khanra/" target="_blank" class="contact-item glass">
+            <i class="fab fa-linkedin ci-icon linkedin"></i>
+            <div><h5>LinkedIn</h5><p>linkedin.com/in/manab-khanra</p></div>
+          </a>
+          <a href="https://github.com/Manab14" target="_blank" class="contact-item glass">
+            <i class="fab fa-github ci-icon github"></i>
+            <div><h5>GitHub</h5><p>github.com/Manab14</p></div>
+          </a>
+          <div class="contact-item glass">
+            <i class="fas fa-phone ci-icon phone"></i>
+            <div><h5>Mobile</h5><p>+91 9064949803</p></div>
+          </div>
+          <div class="contact-item glass">
+            <i class="fas fa-map-marker-alt ci-icon location"></i>
+            <div><h5>Location</h5><p>West Bengal, India 🇮🇳</p></div>
+          </div>
+        </div>
+        <form class="contact-form glass reveal-right" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="fname" placeholder=" " required />
+            <label for="fname">Your Name</label>
+            <i class="fas fa-user form-icon"></i>
+          </div>
+          <div class="form-group">
+            <input type="email" id="femail" placeholder=" " required />
+            <label for="femail">Email Address</label>
+            <i class="fas fa-envelope form-icon"></i>
+          </div>
+          <div class="form-group">
+            <input type="text" id="fsubject" placeholder=" " required />
+            <label for="fsubject">Subject</label>
+            <i class="fas fa-tag form-icon"></i>
+          </div>
+          <div class="form-group">
+            <textarea id="fmessage" rows="5" placeholder=" " required></textarea>
+            <label for="fmessage">Message</label>
+            <i class="fas fa-comment form-icon"></i>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div id="formSuccess" class="form-success" style="display:none">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">MK<span class="dot">.</span></p>
+      <p class="footer-tagline">Turning data into decisions.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Manab14" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/manab-khanra/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:manabkhanra499@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Manab Khanra</p>
+    </div>
+  </footer>
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
